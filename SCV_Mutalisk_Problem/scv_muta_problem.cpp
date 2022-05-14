@@ -38,7 +38,7 @@ void subtract(vector<int>& v, int index, int takeAway) {
 	}
 }
 
-int mutalistAttack(const vector<int>& scvs) {
+int mutaliskAttack(const vector<int>& scvs) {
 	int counter = 0;
 	vector<int> curr = scvs;
 	while (curr.size() < 3) {
@@ -73,7 +73,7 @@ void testMutaliskAttack() {
 	};
 	vector<int> outputs = {3, 42, 6, 3, 3, 1, 3, 3, 7};
 	for (int i = 0; i < inputs.size(); i++) {
-		customAssert(mutalistAttack(inputs[i]), outputs[i], i + 1);
+		customAssert(mutaliskAttack(inputs[i]), outputs[i], i + 1);
 		cout << "\n" << (i + 1) << " tests have passed!";
 	}
 	cout << "\n\nall tests pass!\n";
